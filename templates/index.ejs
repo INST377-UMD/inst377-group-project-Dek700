@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Star Wars Database</title>
+        <style>
+
+            .navBar {
+                background-color: cyan;
+                overflow: hidden;
+                padding-left: 40%;
+            }
+
+            /* Style the links inside the navigation bar */
+            .navBar a {
+                float: left;
+                color: black;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+            }
+
+            .navBar a:hover {
+                background-color: green;
+                color: white;
+            }
+
+            h1 {
+                background-color: teal;
+                padding-left: 40%;
+            }
+
+            #mainContainer {
+                padding-left: 30%;
+                padding-right: 30%;
+                padding-top: 4%;
+                display: flex
+                
+            }
+
+            #left {
+                flex: 50%
+            }
+
+            body {
+                background-color: antiquewhite;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>Star Wars Database</h1>
+        <div class="navBar">
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/documentation">Documentation</a>
+        </div>
+        <div id="mainContainer">
+            <div id="left">
+                <form action="http://localhost:4000/queryinfo" method="post">
+                    Name: <input name="searchName" type="text" required><br>
+                    Select Type:<br>
+                    <pre>People   <input type="radio" name="searchType" value="people"></pre>
+                    <pre>Planet   <input type="radio" name="searchType" value="planets"></pre>
+                    <pre>Film     <input type="radio" name="searchType" value="films"></pre>
+                    <pre>Species  <input type="radio" name="searchType" value="species"></pre>  
+                    <pre>Vehicle  <input type="radio" name="searchType" value="vehicles"></pre>
+                    <pre>Starship <input type="radio" name="searchType" value="starships"></pre>
+                    <input type="submit">
+                </form>
+            </div>
+            <div id="right">
+                <%- history %>
+                <form action="http://localhost:4000/clear" method="post">
+                    <input type="submit" value="Clear Search History" class="submitButton">
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

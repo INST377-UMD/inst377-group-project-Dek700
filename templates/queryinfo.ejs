@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Query Info</title>
+        <style>
+            h2{
+                text-align: center;
+                }
+             div{
+                text-align: center;
+                background-color: bisque;
+            }
+            .componentWrapper {
+                border: solid crimson;
+                border-radius: 100px;
+                padding: 10px;
+                padding-top: 15px;
+                width: 95%;
+            }
+
+            body {
+                background-color: antiquewhite;
+            }
+
+            .navBar {
+                background-color: cyan;
+                overflow: hidden;
+                padding-left: 40%;
+            }
+
+            /* Style the links inside the navigation bar */
+            .navBar a {
+                float: left;
+                color: black;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+            }
+
+            .navBar a:hover {
+                background-color: green;
+                color: white;
+            }
+
+            h1 {
+                background-color: teal;
+                padding-left: 40%;
+            }
+
+            #mainContainer {
+                display: flex
+            }
+
+            #left {
+                flex: 50%
+            }
+
+            #h {
+                background-color: white;
+            }
+        </style>
+
+    </head>
+    <body>
+        <h1>Star Wars Database</h1>
+        <div class="navBar">
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/documentation">Documentation</a>
+        </div>
+        <div><%- table %></div>\
+        <form action="http://localhost:4000/" method="get">
+            <input type="submit" value="Go Back">
+        </form>
+    </body>
+</html>

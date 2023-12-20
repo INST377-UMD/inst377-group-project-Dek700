@@ -1,0 +1,104 @@
+<html>
+<head>
+    <title>About</title>
+        <style>
+            h2{
+                text-align: center;
+                }
+             div{
+                text-align: center;
+                background-color: bisque;
+            }
+            .componentWrapper {
+                border: solid crimson;
+                border-radius: 100px;
+                padding: 10px;
+                padding-top: 15px;
+                width: 95%;
+            }
+
+            body {
+                background-color: antiquewhite;
+            }
+
+            .navBar {
+                background-color: cyan;
+                overflow: hidden;
+                padding-left: 40%;
+            }
+
+            /* Style the links inside the navigation bar */
+            .navBar a {
+                float: left;
+                color: black;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+            }
+
+            .navBar a:hover {
+                background-color: green;
+                color: white;
+            }
+
+            h1 {
+                background-color: teal;
+                padding-left: 40%;
+            }
+
+            #mainContainer {
+                display: flex
+            }
+
+            #left {
+                flex: 50%
+            }
+        </style>
+    </head>
+<body>
+    <h1>Star Wars Database</h1>
+    <div class="navBar">
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/documentation">Documentation</a>
+    </div>
+
+<div class="componentWrapper">
+<h2>How to use website</h2>
+
+<p>Enter the name of a character, planet, film, species, vehicle, or starship related to Star Wars and then select the category of the name you entered.
+Beware that the name field is requried! After clicking submit, it will take you to a table with the meta-data related to the character, planet, etc. that you entered.
+The homepage will also track your search history. If you want to clear your search history, click the button "Clear Search History".
+</p>
+</div>
+<div class="componentWrapper">
+<h2>Mission</h2>
+
+<p> We have created an easily accessible, simple-to-use, user-friendly interface that has
+accurate Star Wars metadata information for the everyday Star Wars fan (tech-savvy or not) to
+use. No more relying on Wikipedia or conflicting sources online, no having to navigate an API
+on your own, the site does it all for you. As of now, there are not many websites that are
+committed to displaying quick, accurate Star Wars factoids, and our application takes
+on this issue. This web application provides metadata on everything Star Wars. Data ranges
+from characters (82), planets (60), films (6), species (37), vehicles (39), and starships (36).</p></div>
+
+<div class="componentWrapper">
+<h2>Goals</h2>
+
+<p>Our ultimate goal is to provide a credible service that gives users exact information on any Star Wars
+information (including characters, planets, films, species, vehicles, and starships) to their heart desires. With this site, we will make Star Wars information free, accessible, and
+accurate to all. No hard research and fact-checking will be required the API gives us all the information
+we need and the website gives you a quick easy way to access it. </p></div>
+
+<div class="componentWrapper">
+<h2>Star Wars API</h2>
+
+<p>We have chosen to use SWAPI (The Star Wars API) to create our application. This data
+is easily accessible, and that’ll also make it easy for our users to query. We stated the type of
+information it has above (characters, planets, ...). This API lists easy to fetch metadata about
+each information type (like starship capacity, or a planet's climate). The amount of information
+won’t overload/overwhelm the user, but it’ll leave them feeling intrigued, informed, and wanting
+to know more.</p></div>
+</body>
+</html>
